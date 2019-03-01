@@ -1,0 +1,42 @@
+Professor: Alessandro Amaral Breves
+Turma Código: 11088
+Andar 5 - Sala 19 - 19h ~ 22h
+10 min intervalo
+
+https://github.com/Vlavros/php-class-11088
+
+Até 22/04
+
+---------------------------------------------------------
+Aula 01 - 27/02/2019 - Quarta
+- XAMP -> Apache / MySQL / PHP
+- Atom -> Editor
+
+paginas index dentro dos diretórios
+
+WAMP x XAMP
+
+IP Internet Protocol
+Professor: 10.5.19.31
+
+POST x GET
+GET: via url
+
+https://www.w3schools.com/
+
+---------------------------------------------------------
+Aula 02 - 28/02/2019 - Quinta
+
+git (https://git-scm.com/download/win) x github (https://desktop.github.com/)
+
+https://pt.wikipedia.org/wiki/Git
+https://pt.wikipedia.org/wiki/GitHub
+
+GIT vs SVN (https://pt.stackoverflow.com/questions/8315/quais-as-diferen%C3%A7as-entre-git-svn-e-cvs)
+
+GitHub vs  BitNucket (https://bitbucket.org/)
+
+ctrl+SHIFT+9: Abrir aba git
+alt+v: menu view
+
+http://php.net/manual/pt_BR/reserved.variables.get.php

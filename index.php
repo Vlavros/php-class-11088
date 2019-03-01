@@ -14,7 +14,7 @@
 				<a href="lessons/20190227/aula-2702.php" target="_self">Aula 27/fev</a>
 			</li>
 			<li>
-				<a href="lessons/20190228/index.php" target="_self">Aula 28/fev</a>
+				<a href="lessons/20190228/index.php?teste=Aula02" target="_self">Aula 28/fev</a>
 			</li>
 		</ul>
 
