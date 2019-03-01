@@ -40,3 +40,6 @@ ctrl+SHIFT+9: Abrir aba git
 alt+v: menu view
 
 http://php.net/manual/pt_BR/reserved.variables.get.php
+
+---------------------------------------------------------
+Aula 03 - 01/03/2019 - Sexta
