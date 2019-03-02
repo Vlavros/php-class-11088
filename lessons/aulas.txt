@@ -7,6 +7,14 @@ https://github.com/Vlavros/php-class-11088
 
 Até 22/04
 
+Pastas:
+- classes
+- core
+- js
+- lessons
+- lib
+- media
+
 ---------------------------------------------------------
 Aula 01 - 27/02/2019 - Quarta
 - XAMP -> Apache / MySQL / PHP
@@ -43,4 +51,40 @@ http://php.net/manual/pt_BR/reserved.variables.get.php
 
 ---------------------------------------------------------
 Aula 03 - 01/03/2019 - Sexta
-teste
+
+A:\semana_noite\Breves\Docs
+
+IDE - Integrated Development Environment
+Netbeans
+Eclipse
+Visual Code
+Atom
+Sublime
+Visual Studio
+...
+
+https://www.scriptcaseblog.com.br/vetores-matrizes-php/
+http://php.net/manual/pt_BR/language.types.array.php
+
+Vetores e Arrays - Lista ou sequencia de variáveis
+Em algoritimos: é homogenico todas variáveis sendo do mesmo tipo ex String e tem tamanho fixo e sâo indentificados por números
+Em PHP: é heterogeneo e tem tamanhos variáveis e acesso indexado por números ou strings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

@@ -11,10 +11,16 @@
 
 		<ul>
 			<li>
-				<a href="lessons/20190227/aula-2702.php" target="_self">Aula 27/fev</a>
+				<a href="lessons/20190227/aula-2702.php?teste=Aula01" target="_self">Aula 01 - 27/fev</a>
 			</li>
 			<li>
-				<a href="lessons/20190228/index.php?teste=Aula02" target="_self">Aula 28/fev</a>
+				<a href="lessons/20190228/index.php?teste=Aula02" target="_self">Aula 02 - 28/fev</a>
+			</li>
+			<li>
+				<a href="lessons/20190301/index.php?teste=Aula03" target="_self">Aula 03 - 01/mar</a> <br>
+			</li>
+			<li>
+				<a href="exercicios.php" target="_self">Exercícios</a> <br>
 			</li>
 		</ul>
 
