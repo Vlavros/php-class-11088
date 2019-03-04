@@ -10,7 +10,7 @@
   </head>
   <body>
     <?php
-      $aHref = "lessons/20190301/ex4-pag23-alg.php";
+      $aHref = "lessons/20190301/exercicio-01.php";
       $aTarget = "_blank";
       $sCaption = "Exercício 4 da página 23 de Algoritmos";
       $sLink = "<a href='$aHref' target='$aTarget'>$sCaption</a>";

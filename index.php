@@ -20,6 +20,9 @@
 				<a href="lessons/20190301/index.php?teste=Aula03" target="_self">Aula 03 - 01/mar</a> <br>
 			</li>
 			<li>
+				<a href="lessons/20190304/index.php?teste=Aula03" target="_self">Estudo - 04/mar</a> <br>
+			</li>
+			<li>
 				<a href="exercicios.php" target="_self">Exercícios</a> <br>
 			</li>
 		</ul>

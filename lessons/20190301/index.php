@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <a href="ex4-pag23-alg.php">Exercício 04, Página 23 de Algoritmos</a>
+    <a href="exercicio-01.php">Exercício 04, Página 23 de Algoritmos</a>
 
     <?php
       echo "<pre>";

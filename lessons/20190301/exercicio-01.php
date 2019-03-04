@@ -16,26 +16,31 @@
     <?php
       if(isset($_REQUEST['nYear']) && !empty($_REQUEST['nYear'])){
           //echo $_REQUEST['nYear'];
-          print_r($_REQUEST);
+          //print_r($_REQUEST);
 
           $nYear = $_REQUEST['nYear'];
-          if($nYear % 2 !== 0) {
-            echo "<h5>NÃO É BISSEXTO</h5>";
+          if(($nYear % 4 == 0 && $nYear % 100 !== 0) || ($nYear % 400 == 0)) {
+            echo "<h5>$nYear É ANO BISSEXTO!</h5>";
           } else {
-            echo "<h5>PRECISA TESTAR - TAREFA DE CASA</h5>";
+            echo "<h5>$nYear NÃO É ANO BISSEXTO!</h5>";
           }
 
       } else {
-          echo "<h5>Informe um ano.</h5>";
+          echo "<h5>INFORME UM ANO.</h5>";
+          $nYear = date("Y");
       }
      ?>
 
     <h4>Verificar se é ano bissexto</h4>
     <form id="frmEx4Pag23Alg" name="frmEx4Pag23Alg" method="get" action="#">
       <label>Ano:</label> <br />
-      <input id="nYear" name="nYear" type="number" min="1900" max="2050" value="2019" />
+      <input id="nYear" name="nYear" type="number" min="1800" max="4000" value="<?=$nYear?>" />
       <input id="subVerify" type="submit" value="Verificar" />
     </form>
 
+    <br><br>
+    <a href="https://escolakids.uol.com.br/matematica/calculo-do-ano-bissexto.htm">Cálculo de anos bissextos</a> <br>
+    <a href="https://mundoeducacao.bol.uol.com.br/matematica/anos-bissextos.htm">Exemplos de anos bissextos</a> <br>
+  
   </body>
 </html>
