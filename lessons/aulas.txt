@@ -25,7 +25,7 @@ paginas index dentro dos diretórios
 WAMP x XAMP
 
 IP Internet Protocol
-Professor: 10.5.19.31
+Professor: 10.5.19.31 - http://10.5.19.31/curso-php-11088/
 
 POST x GET
 GET: via url
@@ -70,6 +70,46 @@ Vetores e Arrays - Lista ou sequencia de variáveis
 Em algoritimos: é homogenico todas variáveis sendo do mesmo tipo ex String e tem tamanho fixo e sâo indentificados por números
 Em PHP: é heterogeneo e tem tamanhos variáveis e acesso indexado por números ou strings
 
+---------------------------------------------------------
+Aula 04 - 06/03/2019 - Quarta
+Super Globais: Variaveis criadas pelo PHP/Apache ($_) : São Arrays
+
+Em PHP:
+=   Atribuição
+==  IGUAL A : Testa valor
+=== IDENTICO A: TESTA O VALOR E O TIPO
+1  == "1" -> TRUE
+1 === "1" -> FALSE
+
+Testa valores diferentes: != e !==
+
+Operação Mod (%) retorna o resto da divisão
+
+Função x Procedimento: Função retorna um valor
+
+../ -> Sobre um diretório
+../../ -> Sobre dois diretórios
+
+include x require x include_once x (require_once -> mais usado?)
+
+https://stackoverflow.com/questions/1996122/how-to-prevent-xss-with-html-php
+
+https://www.w3schools.com/php/
+
+http://php.net/docs.php
+
+PHP é fracamente tipada -
+date("Y"); -> "2019"
+2019 ==  "2019" -> TRUE
+2019 === "2019" -> FALSE
+
+array associativo: o indexes são strings -> getdate()
+
+https://www.w3schools.com/tags/tag_sup.asp
+
+- O que é timestamp? "carimbo de tempo"
+Medição do tempo utilizado em sistemas computacionais
+timestamp é o número de segundos decorridos a partit de 1 de janeiro de 1970 até a data em questão. Início da era UNIX (https://pt.wikipedia.org/wiki/Era_Unix)
 
 
 

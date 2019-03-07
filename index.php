@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<title>Curso PHP 11088</title>
+		<link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
+    <script src="/php-class-11088/js/jquery.js"></script>
+    <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>		
 	</head>
 
 	<body>
@@ -20,7 +23,10 @@
 				<a href="lessons/20190301/index.php?teste=Aula03" target="_self">Aula 03 - 01/mar</a> <br>
 			</li>
 			<li>
-				<a href="lessons/20190304/index.php?teste=Aula03" target="_self">Estudo - 04/mar</a> <br>
+				<a href="lessons/20190304/index.php" target="_self">Estudo - 04/mar</a> <br>
+			</li>
+			<li>
+				<a href="lessons/20190306/index.php?teste=Aula04" target="_self">Aula 04 - 06/mar</a> <br>
 			</li>
 			<li>
 				<a href="exercicios.php" target="_self">Exercícios</a> <br>
@@ -30,30 +36,6 @@
 		<hr />
 
 		<?php echo "Teste PHP - Funcionando";  ?>
-
-		<?php
-			echo "<hr />";
-
-			$x = "AAA";
-
-			echo "<h4>aaaa</h4>";
-			echo "
-				<table>
-					<tr>
-						<th>Coluna 1</th>
-						<th>Coluna 2</th>
-						<th>Coluna 3</th>
-					</tr>
-				</table>
-			";
-
-			echo $x . $x . " $x";
-
-			echo "<hr />";
-
-		?>
-
-		<p>This is a paragraph.</p>
 
 	</body>
 
