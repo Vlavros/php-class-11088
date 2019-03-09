@@ -5,6 +5,8 @@ Andar 5 - Sala 19 - 19h ~ 22h
 
 https://github.com/Vlavros/php-class-11088
 
+Github Professor: https://github.com/aabreves/curso-php-11088
+
 Até 22/04
 
 Pastas:
@@ -111,6 +113,33 @@ https://www.w3schools.com/tags/tag_sup.asp
 Medição do tempo utilizado em sistemas computacionais
 timestamp é o número de segundos decorridos a partit de 1 de janeiro de 1970 até a data em questão. Início da era UNIX (https://pt.wikipedia.org/wiki/Era_Unix)
 
+---------------------------------------------------------
+Aula 05 - 07/03/2019 - Quinta
+Github Professor: https://github.com/aabreves/curso-php-11088
+
+http://127.0.0.1/professor/curso-php-11088/
+
+node_modules
+
+https://nodejs.org/en/
+software yarn: gerenciamento dependecias do javascript (https://yarnpkg.com/lang/en/docs/install/#windows-stable)
+
+yarn x npm
+
+npm: node package manager
+
+https://www.w3schools.com/bootstrap4/bootstrap_dropdowns.asp
+
+---------------------------------------------------------
+Aula 06 - 08/03/2019 - Sexta
+
+AJAX x XML (http://www.linhadecodigo.com.br/artigo/1144/o-que-e-ajax-e-como-aplica-la-com-php-parte-1.aspx)
+
+HTML x XML x JSON x PLAIN TEXT
+
+input require
+
+Funções e Procedimentos
 
 
 
