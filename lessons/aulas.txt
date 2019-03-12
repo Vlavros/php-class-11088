@@ -141,6 +141,21 @@ input require
 
 Funções e Procedimentos
 
+---------------------------------------------------------
+Aula 07 - 11/03/2019 - Segunda
+
+phpinfo.php : http://php.net/manual/pt_BR/function.phpinfo.php
+http://127.0.0.1/php-class-11088/phpinfo.php
+
+http://felipequadros.com/programa%C3%A7%C3%A3o/b%C3%A1sico/iniciante/geral/teoria/2016/06/05/tipagem-fraca-forte-est%C3%A1tica-din%C3%A2mica-e-inferencia-de-tipo/
+
+HTML DOM: Javascript
+https://www.w3schools.com/js/js_htmldom.asp
+
+PHP orientado a objetos
+https://www.devmedia.com.br/introducao-a-orientacao-a-objetos-em-php/26762
+
+
 
 
 

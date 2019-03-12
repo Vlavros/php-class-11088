@@ -1,29 +1,34 @@
 <?php
 
-require_once("php-class-11088/utilities/menu-utilities.php");
+require_once("./utilities/menu-utilities.php");
 
 $asLinks1 = [];
 
 $asLinks1 = [
 [
-   "href" => "exercices/ex4-pag23-form.php",
+   "href" => "info/server-info.php",
    "target" => "ifrNav",
-   "caption" => "ITEM 01"
+   "caption" => "Servidor"
 ],
 [
-   "href" => "exercices/ex4-pag23-form.php",
+   "href" => "info/user-agent-info.php",
    "target" => "ifrNav",
-   "caption" => "ITEM 02"
+   "caption" => "User Agent"
+],
+[
+   "href" => "info/phpinfo.php",
+   "target" => "ifrNav",
+   "caption" => "PHP Info"
 ]
 ];
 
  ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="height:100%;">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudo 02 - 10/Mar - Index</title>
+    <title>Informações</title>
     <link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="/php-class-11088/lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="/php-class-11088/lib/bootstrap/css/bootstrap.css">
@@ -33,15 +38,15 @@ $asLinks1 = [
     <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>
     <script>
     $(function() {
-      alert("Teste");
+      //alert("Teste");
     });
     </script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <body style="height:100%;">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height:10%;">
         <a class="navbar-brand"
            href="#">
-            <img src="/php-class-11088/media/images/bird.jpg"
+            <img src="./media/images/bird.jpg"
                  alt="Logo"
                  style="width:40px;">
         </a>
@@ -49,14 +54,14 @@ $asLinks1 = [
 
           <li class="nav-item">
               <a class="nav-link"
-                 href="/php-class-11088/index.php">Index</a>
+                 href="./index.php">Index</a>
           </li>
 
-            <?=buildDropdownMenu( "NavItem01", "MENU 01", $asLinks1)?>
+            <?=buildDropdownMenu( "NavItem01", "Informações", $asLinks1)?>
 
         </ul>
     </nav>
-    <div style="position:absolute;top:60px;width:100%;height:600px;background-color:#000;padding:10px;">
+    <div style="top:60px;width:100%;height:90%;background-color:#000;padding:10px;">
         <iframe id="ifrNav"
                 name="ifrNav"
                 style="width:100%;height:100%;background-color:#aaa"></iframe>

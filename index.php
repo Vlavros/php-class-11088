@@ -4,7 +4,7 @@
 		<title>Curso PHP 11088</title>
 		<link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
     <script src="/php-class-11088/js/jquery.js"></script>
-    <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>		
+    <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>
 	</head>
 
 	<body>
@@ -29,7 +29,16 @@
 				<a href="lessons/20190306/index.php?teste=Aula04" target="_self">Aula 04 - 06/mar</a> <br>
 			</li>
 			<li>
+				<a href="lessons/20190310/index.php" target="_self">Estudo - 10/mar</a> <br>
+			</li>
+			<li>
 				<a href="exercicios.php" target="_self">Exercícios</a> <br>
+			</li>
+			<li>
+				<a href="modelo.php" target="_self">Modelo</a> <br>
+			</li>
+			<li>
+				<a href="info.php" target="_self">Info</a> <br>
 			</li>
 		</ul>
 
