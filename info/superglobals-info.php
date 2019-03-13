@@ -1,45 +1,5 @@
 <?php
 require_once("../utilities/table-utilities.php");
-
-//echo "<h2>server-info</h2>";
-
-/*
-echo "<pre>";
-print_r($_SERVER); //A SUPERGLOBAL $_SERVER É UM ARRAY
-echo "</pre>";
-*/
-
-/*
-foreach($_SERVER as $sValue) {
-  echo $sValue;
-  echo "<br>";
-}
-*/
-
-/*
-$htmlServerInfo  = "<table class=\"table table-striped\">";
-$htmlServerInfo .= "<thead>";
-$htmlServerInfo .= "<tr>";
-$htmlServerInfo .= "<th>CHAVE</th>";
-$htmlServerInfo .= "<th>VALUE</th>";
-$htmlServerInfo .= "</tr>";
-$htmlServerInfo .= "</thead>";
-
-$htmlServerInfo .= "<tbody>";
-foreach ($_SERVER as $key => $value) { //key é o index
-  //echo "$key -> $value <br>";
-
-  $htmlServerInfo .= "<tr>";
-  $htmlServerInfo .= "<td>$key</td>";
-  $htmlServerInfo .= "<td>$value</td>";
-  $htmlServerInfo .= "</tr>";
-
-}
-$htmlServerInfo .= "</tbody>";
-$htmlServerInfo .= "</table>";
-*/
-
-//echo $htmlServerInfo;
  ?>
 
  <!DOCTYPE html>
@@ -63,7 +23,11 @@ $htmlServerInfo .= "</table>";
    </head>
    <body style="width:100%;height:100%;">
      <div id="divContent">
+       <?=createTable("\$_REQUEST","_REQUEST",$_REQUEST)?>
+       <hr>
        <?=createTable("\$_SERVER","_SERVER",$_SERVER)?>
+       <hr>
+       <?=createTable("\$_ENV","_ENV",$_ENV)?>
      </div>
 
    </body>

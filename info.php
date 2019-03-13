@@ -19,6 +19,11 @@ $asLinks1 = [
    "href" => "info/phpinfo.php",
    "target" => "ifrNav",
    "caption" => "PHP Info"
+],
+[
+   "href" => "info/superglobals-info.php?teste=Aula08&Aula=08",
+   "target" => "ifrNav",
+   "caption" => "Super Globals"
 ]
 ];
 

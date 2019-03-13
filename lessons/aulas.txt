@@ -155,8 +155,27 @@ https://www.w3schools.com/js/js_htmldom.asp
 PHP orientado a objetos
 https://www.devmedia.com.br/introducao-a-orientacao-a-objetos-em-php/26762
 
+---------------------------------------------------------
+Aula 08 - 12/03/2019 - Terça
 
+Variáveis super Globais
+http://php.net/manual/pt_BR/language.variables.superglobals.php
 
+htmlspecialchars()
+
+parser do PHP:
+https://pt.wikipedia.org/wiki/An%C3%A1lise_sint%C3%A1tica_(computa%C3%A7%C3%A3o)
+
+Camadas Ethernet
+https://pt.wikipedia.org/wiki/Modelo_OSI
+
+$_ENV: environment -> Informações do sistema operacional
+
+chocolatey install:
+https://chocolatey.org/docs/installation
+https://imasters.com.br/back-end/chocolatey-o-que-e-e-como-usar
+
+HTTP_USER_AGENT: Descobrir informações do usuário
 
 
 
