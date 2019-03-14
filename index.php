@@ -40,6 +40,9 @@
 			<li>
 				<a href="info.php" target="_self">Info</a> <br>
 			</li>
+			<li>
+				<a href="samples.php" target="_self">Samples</a> <br>
+			</li>
 		</ul>
 
 		<hr />

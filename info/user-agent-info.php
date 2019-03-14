@@ -2,27 +2,35 @@
   require_once("../utilities/table-utilities.php");
 
   $sUserAgent = $_SERVER["HTTP_USER_AGENT"];
+  $sUserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko"; //IE
+
   $iStart = strpos($sUserAgent,"(",0) +1;
   $iEnd   = strpos($sUserAgent,")",$iStart);
 
-  echo $iStart;
-  echo "<br>";
-  echo $iEnd;
+  //echo $iStart;
+  //echo "<br>";
+  //echo $iEnd;
 
-  echo "<br>";
+  //echo "<br>";
   $sSO = substr($sUserAgent,$iStart,$iEnd - $iStart);
-  echo $sSO;
-  echo "<br>";
 
-  $aSO[] = explode(";",$sSO);
-  print_r($aSO);
-  echo "<br>";
+  //echo $sSO;
+  //echo "<br>";
+
+  $aSO = explode(";",$sSO);
+
+  //print_r($aSO);
+  //echo "<br>";
 
   //$sUserAgent[0] = $_SERVER["HTTP_USER_AGENT"];
   //$sUserAgent[1] = $_SERVER["HTTP_HOST"];
   //$sUserAgent[2] = $_SERVER['REMOTE_ADDR'];
 
   //qual so windows ou linux 32 ou 64 - ipcliente
+
+  foreach ($aSO as $key => $value) {
+    $aSO[$key] = trim($value);
+  }
 
  ?>
 
@@ -48,9 +56,14 @@
    <body style="width:100%;height:100%;">
      <div id="divContent">
        <!--?=createTable("User Agent","_USERAGENT",$sUserAgent)?-->
+       <pre>
        <?php
-        echo $sUserAgent;
+        echo "Start: $iStart \n";
+        echo "End: $iEnd \n";
+        print_r($aSO);
+        //echo $sUserAgent;
        ?>
+     </pre>
        <br><br><br>
        Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36 <br>
        Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36 <br>

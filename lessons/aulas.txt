@@ -177,6 +177,29 @@ https://imasters.com.br/back-end/chocolatey-o-que-e-e-como-usar
 
 HTTP_USER_AGENT: Descobrir informações do usuário
 
+---------------------------------------------------------
+Aula 09 - 13/03/2019 - Quarta
+
+https://www.ime.usp.br/~pf/algoritmos/aulas/string.html
+
+CSV - comma separated values
+
+Tarefa para casa: O que significa o conteúdo do $_SERVER["USER_AGENT"]?
+http://php.net/manual/pt_BR/tutorial.useful.php
+
+http://www.csci.csusb.edu/dick/samples/php.samples.html
+
+Abrir arquivo: fopen
+Ler ou Gravar: fread / fwrite
+Fechar: fclose
+
+stream: https://www.significados.com.br/streaming/
+
+wrapper: https://pt.stackoverflow.com/questions/3910/o-que-%C3%A9-uma-classe-wrapper
+
+php handle: https://stackoverflow.com/questions/42373743/php-is-handle-a-special-variable
+
+Leitura e gravação de arquivos: http://www.cpscetec.com.br/adistancia/php_mysql/aulas/aula6.htm
 
 
 
