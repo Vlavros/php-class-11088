@@ -32,21 +32,21 @@ $asSession = [
 
 $asObjects = [
   [
-     "href" => "#",
+     "href" => "./samples/objects-01.php",
      "target" => "ifrNav",
-     "caption" => "ITEM 01"
+     "caption" => "Objetos"
   ],
   [
-     "href" => "#",
+     "href" => "./samples/objects-02.php",
      "target" => "ifrNav",
-     "caption" => "ITEM 02"
+     "caption" => "Objetos e Classes"
   ]
 ];
 
  ?>
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html lang="pt-br" style="width:100%;height:100%;">
+  <head style="width:100%;height:100%;">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samples</title>
@@ -84,7 +84,7 @@ $asObjects = [
 
         </ul>
     </nav>
-    <div style="position:absolute;top:60px;width:100%;height:600px;background-color:#000;padding:10px;">
+    <div style="position:absolute;top:60px;width:100%;height:90%;background-color:#000;padding:10px;">
         <iframe id="ifrNav"
                 name="ifrNav"
                 style="width:100%;height:100%;background-color:#aaa"></iframe>

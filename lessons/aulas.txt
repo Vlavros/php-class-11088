@@ -201,8 +201,17 @@ php handle: https://stackoverflow.com/questions/42373743/php-is-handle-a-special
 
 Leitura e gravação de arquivos: http://www.cpscetec.com.br/adistancia/php_mysql/aulas/aula6.htm
 
+---------------------------------------------------------
+Aula 10 - 14/03/2019 - Quinta
 
+3 formas de ler o arquivos
+http://php.net/manual/pt_BR/function.file-get-contents.php
+http://php.net/manual/pt_BR/function.fopen.php
+https://secure.php.net/manual/pt_BR/function.file.php
 
+JSON -> Javascript Object Notation
+
+AJAX: asynchronous javascript and xml
 
 
 
