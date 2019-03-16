@@ -39,7 +39,22 @@ $asObjects = [
   [
      "href" => "./samples/objects-02.php",
      "target" => "ifrNav",
-     "caption" => "Objetos e Classes"
+     "caption" => "JSON"
+  ],
+  [
+     "href" => "./samples/arrays.php",
+     "target" => "ifrNav",
+     "caption" => "Arrays"
+  ],
+  [
+     "href" => "./samples/objects-03.php",
+     "target" => "ifrNav",
+     "caption" => "Objetos e Classes 01"
+  ],
+  [
+     "href" => "./samples/objects-04.php",
+     "target" => "ifrNav",
+     "caption" => "Objetos e Classes 02"
   ]
 ];
 

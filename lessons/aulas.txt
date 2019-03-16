@@ -213,6 +213,20 @@ JSON -> Javascript Object Notation
 
 AJAX: asynchronous javascript and xml
 
+---------------------------------------------------------
+Aula 11 - 15/03/2019 - Sexta
+
+http://php.net/manual/pt_BR/language.types.object.php
+
+classe é um modelo de objeto
+- como vai ser a sequencia de variáveis para aquele objeto
+- classe o modelo do objeto
+
+PHP tem uma classe padrão
+
+orientado a objetos: encampsulamento
+
+
 
 
 

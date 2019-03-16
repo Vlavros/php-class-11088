@@ -22,6 +22,9 @@ function jsonDecode ($json) : object {
       $aJson[$key] = explode(":",$value);
     }
 
+    print_r($aJson);
+    echo "<br>";
+
     $objJson = [];
     foreach ($aJson as $key => $value) {
       $objJson[$value[0]] = $value[1];
@@ -32,7 +35,9 @@ function jsonDecode ($json) : object {
     return (object)$objJson;
 }
 
-$objJson = jsonDecode("{\"name\":\"Vlad\",\"email\":\"vlad@mail.com\"}");
+$sString = "{\"name\":\"Vlad\",\"email\":\"vlad@mail.com\"}";
+//$sString = $jsonData;
+$objJson = jsonDecode($sString);
 echo "<br>";
 print_r($objJson);
 
@@ -43,7 +48,7 @@ print_r($objJson);
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 10 - 14/Mar - Objetos 02</title>
+    <title>Aula 10 - 14/Mar - Objetos 02 (Objetos e Classes)</title>
     <link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="/php-class-11088/lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="/php-class-11088/lib/bootstrap/css/bootstrap.css">
