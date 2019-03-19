@@ -10,6 +10,9 @@ Class Menu{
     $this->caption = $caption;
   }
 
+  public function __destruct() {
+  }  
+
   public function addItem( object $oItemMenu ) {
     $this->itens[] = $oItemMenu;
   }
@@ -35,6 +38,9 @@ Class ItemMenu{
     $this->caption = $caption;
   }
 
+  public function __destruct() {
+  }
+
 }
 
 $oMenuClass = new Menu("menu_01","Menu 01");
@@ -47,6 +53,8 @@ $oMenuClass->addItem($oItemMenu);
 
 $oItemMenu = new ItemMenu("#","_self","Obj Item 03");
 $oMenuClass->addItem($oItemMenu);
+
+$oMenuClass->addItem(new ItemMenu("#","_self","Obj Item 04"));
 
  ?>
 

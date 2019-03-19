@@ -1,3 +1,10 @@
+<?php
+	session_start();
+	session_destroy();
+	//$_SESSION = array();
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 	<head>

@@ -226,6 +226,28 @@ PHP tem uma classe padrão
 
 orientado a objetos: encampsulamento
 
+---------------------------------------------------------
+Aula 12 - 18/03/2019 - Segunda
+
+PHP metodos mágicos
+http://php.net/manual/pt_BR/language.oop5.magic.php
+
+https://pt.wikipedia.org/wiki/Abstra%C3%A7%C3%A3o
+
+http://127.0.0.1/phpmyadmin/
+
+https://pt.wikipedia.org/wiki/MariaDB
+
+DRIVER https://www.oficinadanet.com.br/post/16631-o-que-e-um-sgbd
+
+PDO PHP http://php.net/manual/pt_BR/book.pdo.php
+
+MYSQL
+http://php.net/manual/pt_BR/mysqli.query.php
+http://php.net/manual/pt_BR/function.mysql-connect.php
+
+
+
 
 
 

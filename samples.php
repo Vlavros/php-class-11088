@@ -19,14 +19,19 @@ $asFiles = [
 
 $asSession = [
   [
-     "href" => "#",
+     "href" => "./samples/session-01.php",
      "target" => "ifrNav",
-     "caption" => "ITEM 01"
+     "caption" => "Session 01 - Create"
   ],
   [
-     "href" => "#",
+     "href" => "./samples/session-02.php",
      "target" => "ifrNav",
-     "caption" => "ITEM 02"
+     "caption" => "Session 02 - Use"
+  ],
+  [
+     "href" => "./samples/session-03.php",
+     "target" => "ifrNav",
+     "caption" => "Session 03 - Destroy"
   ]
 ];
 
