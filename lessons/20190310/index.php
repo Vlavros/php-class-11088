@@ -1,21 +1,5 @@
 <?php
 
-require_once("php-class-11088/utilities/menu-utilities.php");
-
-$asLinks1 = [];
-
-$asLinks1 = [
-[
-   "href" => "exercices/ex4-pag23-form.php",
-   "target" => "ifrNav",
-   "caption" => "ITEM 01"
-],
-[
-   "href" => "exercices/ex4-pag23-form.php",
-   "target" => "ifrNav",
-   "caption" => "ITEM 02"
-]
-];
 
  ?>
 <!DOCTYPE html>
@@ -33,33 +17,16 @@ $asLinks1 = [
     <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>
     <script>
     $(function() {
-      alert("Teste");
+      //alert("Teste");
     });
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <a class="navbar-brand"
-           href="#">
-            <img src="/php-class-11088/media/images/bird.jpg"
-                 alt="Logo"
-                 style="width:40px;">
-        </a>
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-              <a class="nav-link"
-                 href="/php-class-11088/index.php">Index</a>
-          </li>
-
-            <?=buildDropdownMenu( "NavItem01", "MENU 01", $asLinks1)?>
-
-        </ul>
-    </nav>
-    <div style="position:absolute;top:60px;width:100%;height:600px;background-color:#000;padding:10px;">
-        <iframe id="ifrNav"
-                name="ifrNav"
-                style="width:100%;height:100%;background-color:#aaa"></iframe>
-    </div>
+    <ul>
+      <li><a href="exercicio-01.php">Exercício 01</a></li>
+      <li><a href="exercicio-02.php">Exercício 02</a></li>
+      <li><a href="exercicio-03.php">Exercício 03</a></li>
+      <li><a href="exercicio-04.php">Exercício 04</a></li>
+    </ul>
   </body>
 </html>

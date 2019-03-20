@@ -17,6 +17,11 @@
     </script>
   </head>
   <body>
+
+    <ul>
+      <li><a href="exercicio-01.php">Exercício 01</a></li>
+      <li><a href="exercicio-02.php">Exercício 02</a></li>
+    </ul>    
     <?php
 
      ?>

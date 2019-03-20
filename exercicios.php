@@ -77,7 +77,7 @@ $asLinks3 = [[
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link"
-                       href="#">Link 1</a>
+                       href="index.php">Index</a>
                 </li>
 
                 <?=buildDropdownMenu( "NavItem2", "Teste String", $asLinks1)?>

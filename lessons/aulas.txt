@@ -246,6 +246,18 @@ MYSQL
 http://php.net/manual/pt_BR/mysqli.query.php
 http://php.net/manual/pt_BR/function.mysql-connect.php
 
+---------------------------------------------------------
+Aula 13 - 19/03/2019 - Terça
+
+SQL - Structured Query Language
+- DDL - Data Definition Language - CREATE TABLE / ALTER TABLE / CREATE DATABASE
+- DML - Data Manipulation Language - SELECT / INSERT / DELETE / UPDATE
+
+DO PONTO DE VISTA DO PHP, O QUE É O SQL?
+- É TEXTO/STRING
+
+
+
 
 
 

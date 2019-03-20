@@ -1,29 +1,25 @@
 <?php
 
-require_once("./utilities/menu-utilities.php");
+require_once("../utilities/menu-utilities.php");
 
 $asLinks1 = [];
 
-$asLinks1 = [
+$asLinks1 =
 [
-   "href" => "#",
-   "target" => "ifrNav",
-   "caption" => "ITEM 01"
-],
-[
-   "href" => "#",
-   "target" => "ifrNav",
-   "caption" => "ITEM 02"
-]
+  [
+     "href" => "create-user-admin.php",
+     "target" => "ifrNav",
+     "caption" => "Create User"
+  ]
 ];
 
  ?>
 <!DOCTYPE html>
-<html lang="pt-br" style="width:100%;height:100%">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula XX - XX/Mar - Index</title>
+    <title>Aula 13 - 19/Mar - Deploy</title>
     <link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="/php-class-11088/lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="/php-class-11088/lib/bootstrap/css/bootstrap.css">
@@ -33,11 +29,11 @@ $asLinks1 = [
     <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>
     <script>
     $(function() {
-      alert("Teste");
+      //alert("Teste");
     });
     </script>
   </head>
-  <body style="width:100%;height:100%">
+  <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <a class="navbar-brand"
            href="#">
@@ -52,7 +48,7 @@ $asLinks1 = [
                  href="/php-class-11088/index.php">Index</a>
           </li>
 
-            <?=buildDropdownMenu( "NavItem01", "MENU 01", $asLinks1)?>
+            <?=buildDropdownMenu( "NavItem01", "Deploy", $asLinks1)?>
 
         </ul>
     </nav>

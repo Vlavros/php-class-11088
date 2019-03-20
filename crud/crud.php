@@ -1,21 +1,57 @@
 <?php
 
-require_once("./utilities/menu-utilities.php");
+require_once("../utilities/menu-utilities.php");
 
-$asLinks1 = [];
-
-$asLinks1 = [
+$asProducts =
 [
-   "href" => "#",
-   "target" => "ifrNav",
-   "caption" => "ITEM 01"
-],
-[
-   "href" => "#",
-   "target" => "ifrNav",
-   "caption" => "ITEM 02"
-]
+  [
+     "href" => "products/select.php",
+     "target" => "ifrNav",
+     "caption" => "Consultar"
+  ],
+  [
+     "href" => "products/insert.php",
+     "target" => "ifrNav",
+     "caption" => "Cadastrar"
+  ]
 ];
+
+$asCustomers =
+[
+  [
+     "href" => "#",
+     "target" => "ifrNav",
+     "caption" => "Consultar"
+  ]
+];
+
+$asSuppliers =
+[
+  [
+     "href" => "#",
+     "target" => "ifrNav",
+     "caption" => "Consultar"
+  ]
+];
+
+$asEmployees =
+[
+  [
+     "href" => "#",
+     "target" => "ifrNav",
+     "caption" => "Consultar"
+  ]
+];
+
+$asUsers =
+[
+  [
+     "href" => "#",
+     "target" => "ifrNav",
+     "caption" => "Consultar"
+  ]
+];
+
 
  ?>
 <!DOCTYPE html>
@@ -23,7 +59,7 @@ $asLinks1 = [
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula XX - XX/Mar - Index</title>
+    <title>Aula 13 - 19/Mar - CRUD</title>
     <link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="/php-class-11088/lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="/php-class-11088/lib/bootstrap/css/bootstrap.css">
@@ -33,7 +69,7 @@ $asLinks1 = [
     <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>
     <script>
     $(function() {
-      alert("Teste");
+      //alert("Teste");
     });
     </script>
   </head>
@@ -52,7 +88,9 @@ $asLinks1 = [
                  href="/php-class-11088/index.php">Index</a>
           </li>
 
-            <?=buildDropdownMenu( "NavItem01", "MENU 01", $asLinks1)?>
+            <?=buildDropdownMenu( "NavItem01", "Produtos", $asProducts)?>
+            <?=buildDropdownMenu( "NavItem02", "Clientes", $asCustomers)?>
+            <?=buildDropdownMenu( "NavItem03", "Fornecedores", $asSuppliers)?>
 
         </ul>
     </nav>

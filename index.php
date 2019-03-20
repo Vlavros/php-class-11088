@@ -1,61 +1,142 @@
 <?php
-	session_start();
-	session_destroy();
-	//$_SESSION = array();
+
+session_start();
+session_destroy();
+
+require_once("./utilities/menu-utilities.php");
+
+$asAula =
+[
+	[
+	   "href" => "lessons/20190227/aula-2702.php?teste=Aula01",
+	   "target" => "ifrNav",
+	   "caption" => "Aula 01 - 27/fev"
+	],
+	[
+	   "href" => "lessons/20190228/index.php?teste=Aula02",
+	   "target" => "ifrNav",
+	   "caption" => "Aula 02 - 28/fev"
+	],
+	[
+	   "href" => "lessons/20190301/index.php?teste=Aula03",
+	   "target" => "ifrNav",
+	   "caption" => "Aula 03 - 01/mar"
+	],
+	[
+	   "href" => "lessons/20190306/index.php?teste=Aula04",
+	   "target" => "ifrNav",
+	   "caption" => "Aula 04 - 06/mar"
+	]
+];
+
+$asEstudo =
+[
+	[
+	   "href" => "lessons/20190304/index.php",
+	   "target" => "ifrNav",
+	   "caption" => "Estudo 01 - 04/mar"
+	],
+	[
+	   "href" => "lessons/20190310/index.php",
+	   "target" => "ifrNav",
+	   "caption" => "Estudo 02 - 10/mar"
+	],
+	[
+	   "href" => "lessons/20190312/index.php",
+	   "target" => "ifrNav",
+	   "caption" => "Estudo 03 - 12/mar"
+	]
+];
+
+$asOutros =
+[
+	[
+	   "href" => "exercicios.php",
+	   "target" => "_self",
+	   "caption" => "Exercícios"
+	],
+	[
+	   "href" => "modelo.php",
+	   "target" => "_self",
+	   "caption" => "Modelo"
+	],
+	[
+	   "href" => "info.php",
+	   "target" => "_self",
+	   "caption" => "Info"
+	],
+	[
+	   "href" => "samples.php",
+	   "target" => "_self",
+	   "caption" => "Samples"
+	]
+];
+
+$asDeploy =
+[
+	[
+		"href" => "./deploy/deploy.php",
+		"target" => "_self",
+		"caption" => "Deploy"
+	]
+];
+
+$asCRUD=
+[
+	[
+		"href" => "./crud/crud.php",
+		"target" => "_self",
+		"caption" => "Cadastros"
+	]
+];
 
  ?>
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Curso PHP 11088</title>
-		<link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
+<html lang="pt-br" style="width:100%;height:100%">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/php-class-11088/lib/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="/php-class-11088/lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/php-class-11088/lib/bootstrap/css/bootstrap.css">
     <script src="/php-class-11088/js/jquery.js"></script>
+    <script src="/php-class-11088/js/popper.js"></script>
+    <script src="/php-class-11088/lib/bootstrap/js/bootstrap.js"></script>
     <script src="/php-class-11088/lib/jquery-ui/jquery-ui.js"></script>
-	</head>
+    <script>
+    $(function() {
+      //alert("Teste");
+    });
+    </script>
+  </head>
+  <body style="width:100%;height:100%">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand"
+           href="#">
+            <img src="/php-class-11088/media/images/bird.jpg"
+                 alt="Logo"
+                 style="width:40px;">
+        </a>
+        <ul class="navbar-nav">
 
-	<body>
-		<h1>Curso PHP 11088</h1>
+          <li class="nav-item">
+              <a class="nav-link"
+                 href="/php-class-11088/index.php">Index</a>
+          </li>
 
-		<hr />
+            <?=buildDropdownMenu( "NavItem01", "Aulas", $asAula)?>
+						<?=buildDropdownMenu( "NavItem02", "Estudos", $asEstudo)?>
+						<?=buildDropdownMenu( "NavItem03", "Outros", $asOutros)?>
+						<?=buildDropdownMenu( "NavItem03", "Deploy", $asDeploy)?>
+						<?=buildDropdownMenu( "NavItem04", "Cadastros", $asCRUD)?>
 
-		<ul>
-			<li>
-				<a href="lessons/20190227/aula-2702.php?teste=Aula01" target="_self">Aula 01 - 27/fev</a>
-			</li>
-			<li>
-				<a href="lessons/20190228/index.php?teste=Aula02" target="_self">Aula 02 - 28/fev</a>
-			</li>
-			<li>
-				<a href="lessons/20190301/index.php?teste=Aula03" target="_self">Aula 03 - 01/mar</a> <br>
-			</li>
-			<li>
-				<a href="lessons/20190304/index.php" target="_self">Estudo - 04/mar</a> <br>
-			</li>
-			<li>
-				<a href="lessons/20190306/index.php?teste=Aula04" target="_self">Aula 04 - 06/mar</a> <br>
-			</li>
-			<li>
-				<a href="lessons/20190310/index.php" target="_self">Estudo - 10/mar</a> <br>
-			</li>
-			<li>
-				<a href="exercicios.php" target="_self">Exercícios</a> <br>
-			</li>
-			<li>
-				<a href="modelo.php" target="_self">Modelo</a> <br>
-			</li>
-			<li>
-				<a href="info.php" target="_self">Info</a> <br>
-			</li>
-			<li>
-				<a href="samples.php" target="_self">Samples</a> <br>
-			</li>
-		</ul>
-
-		<hr />
-
-		<?php echo "Teste PHP - Funcionando";  ?>
-
-	</body>
-
+        </ul>
+    </nav>
+    <div style="position:absolute;top:60px;width:100%;height:90%;background-color:#000;padding:10px;">
+        <iframe id="ifrNav" name="ifrNav" style="width:100%;height:100%;background-color:#aaa">
+					<h1>Página Inicial</h1>
+				</iframe>
+    </div>
+  </body>
 </html>
