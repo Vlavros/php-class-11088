@@ -113,11 +113,37 @@ class Database {
   * @param type $sTable products
   * @param type $asFilter ["Category" => category_id] - Se for array vazio não tem filtro
   */
-  public function select($sTable, array $asFields, array $asFilter) {
-    //TODO:
-    $sql = "SELECT * FROM $sTable";
+  public function select_($sTable, array $asFields, array $asFilter) { //mudar para protect
+    $sFields = "*";
+
+    if(count($asFields) !== 0) {
+      $sFields = $this->getFieldsList($asFields);
+    }
+
+    $sql = "SELECT $sFields FROM $sTable";
     $this->exec($sql);
 
+  }
+
+  private function getFieldsList(array $asFields) : string {
+    if(false) { //SOLUCAO 01
+      $i = 0;
+      foreach ($asFields as $sField) {
+        $i++;
+        if($i === 1) {
+          $sFields = $sField;
+          continue;
+        }
+        $sFields .= ",".$sField;
+      }
+    } else { //SOLUCAO 02
+      $sFields = array_shift($asFields); //remover o primeiro elemento e o retorna | array_pop -> o ultimo
+      foreach ($asFields as $sField) {
+        $sFields .= ",".$sField;
+      }
+    }
+
+    return $sFields;
   }
 
 }

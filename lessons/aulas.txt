@@ -257,6 +257,20 @@ DO PONTO DE VISTA DO PHP, O QUE É O SQL?
 - É TEXTO/STRING
 
 
+---------------------------------------------------------
+Aula 14 - 20/03/2019 - Quarta
+Tarefa de casa submenus e tabela para printar dados do banco
+
+TABELA BD
+ - NOME DA TABELA
+ - CAMPOS
+ - CHAVE PRIMÁRIA E SE É AUTO_INCREMENT
+
+
+ private x protected
+ protected: a classe derivada consegue acessar
+
+ SPL: Biblioteca padrão do PHP (Standard PHP Library)
 
 
 
