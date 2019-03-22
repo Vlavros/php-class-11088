@@ -272,8 +272,20 @@ TABELA BD
 
  SPL: Biblioteca padrão do PHP (Standard PHP Library)
 
+ ---------------------------------------------------------
+ Aula 15 - 21/03/2019 - Quinta
 
+ Orientação a objetos
+ - Herança
+ - Especialização
 
+https://stackoverflow.com/questions/2558559/what-is-abstract-class-in-php
+
+https://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php
+
+http://php.net/manual/pt_BR/function.mysql-real-escape-string.php
+
+https://stackoverflow.com/questions/46492621/how-to-resolve-this-deprecated-function-each-php
 
 
 

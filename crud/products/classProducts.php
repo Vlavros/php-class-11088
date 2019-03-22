@@ -4,6 +4,7 @@
 //require_once("../../core/classDataset.php");
 
 class Products extends Dataset{
+
   function __construct() {
     parent::__construct();
     $this->sTable = "products";
@@ -21,6 +22,14 @@ class Products extends Dataset{
       "Discontinued"
     ];
     $this->abPrimary = ["ProductID" => true];
+  }
+
+  public function selectByCategory($iCategoryId) {
+
+  }
+
+  public function selectBySupplier($iSupplierId) {
+    
   }
 
 }

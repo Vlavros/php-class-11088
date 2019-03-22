@@ -8,15 +8,22 @@ class Dataset extends Database{
   protected $abPrimary;
 
   function __construct() {
+    parent::__construct();
     $this->startDatabase();
   }
 
   public function selectAll(){
-    $this->select_($this->sTable,$this->asFields,[]);
+    parent::select($this->sTable,$this->asFields,[]);
   }
 
   public function select(array $asFields, array $asFilter) {
+    parent::select($this->sTable,$asFields,$asFilter);
+  }
 
+  public function selectOne($vItemId) {
+    $sPrimaryKey = array_keys($this->abPrimary)[0];
+    $asFilter = [$sPrimaryKey => $vItemId];
+    parent::select($this->sTable,$this->asFields,$asFilter);
   }
 
 }

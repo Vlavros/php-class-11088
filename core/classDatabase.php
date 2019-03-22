@@ -113,15 +113,21 @@ class Database {
   * @param type $sTable products
   * @param type $asFilter ["Category" => category_id] - Se for array vazio não tem filtro
   */
-  public function select_($sTable, array $asFields, array $asFilter) { //mudar para protect
+  protected function select($sTable, array $asFields, array $asFilter) { //mudar para protect
     $sFields = "*";
 
     if(count($asFields) !== 0) {
       $sFields = $this->getFieldsList($asFields);
     }
 
-    $sql = "SELECT $sFields FROM $sTable";
+    $sWhere = "";
+    if(count($asFilter) !== 0) {
+      $sWhere = $this->getFilterList($asFilter);
+    }
+
+    $sql = "SELECT $sFields FROM $sTable $sWhere";
     $this->exec($sql);
+
 
   }
 
@@ -145,6 +151,52 @@ class Database {
 
     return $sFields;
   }
+
+  private function getFilterList(array $asFilter) : string {
+    //$asFilter = [ProductId => 33]
+    //WHERE ProductId=33
+
+    //$asFilter = [ProductId => 1, CategoryId => 4]
+    //WHERE ProductId=1 AND CategoryId=4
+
+    $sWhere = "";
+
+    if(false) {
+      $i = 0;
+      foreach ($asFilter as $sKey => $vValue) {
+        $i++;
+        $vValue = $this->mysql_escape_mimic($vValue);
+        $sKey = $this->mysql_escape_mimic($sKey);
+        if($i === 1) {
+          $sWhere = "WHERE $sKey='$vValue' ";
+          continue;
+        }
+        $sWhere .= " AND $sKey='$vValue' ";
+      }
+    } else {
+      $asKey = each($asFilter);
+      $sWhere = " WHERE {$asKey["key"]}='{$asKey["value"]}'";
+      array_shift($asFilter);
+      foreach ($asFilter as $sKey => $vValue) {
+        $sWhere .= " AND $sKey='$vValue'";
+      }
+    }
+
+    return $sWhere;
+
+  }
+
+  function mysql_escape_mimic($inp) {
+      if(is_array($inp))
+          return array_map(__METHOD__, $inp);
+
+      if(!empty($inp) && is_string($inp)) {
+          return str_replace(array('\\', "\0", "\n", "\r", "'", '"', "\x1a"), array('\\\\', '\\0', '\\n', '\\r', "\\'", '\\"', '\\Z'), $inp);
+      }
+
+      return $inp;
+  }
+
 
 }
 
