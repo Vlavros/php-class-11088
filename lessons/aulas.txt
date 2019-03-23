@@ -3,6 +3,8 @@ Turma Código: 11088
 Andar 5 - Sala 19 - 19h ~ 22h
 10 min intervalo
 
+aa.breves@outlook.com
+
 https://github.com/Vlavros/php-class-11088
 
 Github Professor: https://github.com/aabreves/curso-php-11088
@@ -295,6 +297,9 @@ https://www.techonthenet.com/mysql/functions/password.php
 
 parent:: -> operador de escope
 
+https://github.com/aabreves/php-model -> modelo Professor
+https://bitbucket.org/abreves/
+https://bitbucket.org/abreves/php-model-v2.0
 
 
 
