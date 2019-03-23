@@ -14,7 +14,8 @@ function loadDirs() {
   $asDirs =
   [
     "core" => $sLocation."/core/",
-    "product" => $sLocation."/crud/products/"
+    "product" => $sLocation."/crud/products/",
+    "user" => $sLocation."/crud/users/"
   ];
 
 }

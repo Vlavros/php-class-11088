@@ -96,8 +96,35 @@ class Database {
     }
   }
 
-  public function insert() {
-    //TODO:
+  public function insert_($sTable, array $asData) {
+    //INSERT INTO <table> (fields_list/columns) VALUES (fields_values/values)
+    //$asData = ["column1" => "value1", "column2" => "value2", ...]
+    $sColumns = "";
+    $sValues = "";
+    $i = 0;
+
+    foreach ($asData as $sColumn => $sValue) {
+      $i++;
+      if($i === 1) {
+        $sColumns = $this->mysql_escape_mimic($sColumn);
+        $sValues  = "'{$this->mysql_escape_mimic($sValue)}'";
+        continue;
+      }
+
+      $sColumns .= ", {$this->mysql_escape_mimic($sColumn)}";
+
+      if($sColumn == "user_password") {
+        //$sValues  .= ", PASSWORD('{$this->mysql_escape_mimic($sValue)}')";
+        $sValues  .= ", MD5('{$this->mysql_escape_mimic($sValue)}')";
+      } else {
+        $sValues  .= ", '{$this->mysql_escape_mimic($sValue)}'";
+      }
+    }
+
+    $sqlInsert = "INSERT INTO $sTable ($sColumns) VALUES ($sValues)";
+    //echo "$sqlInsert";
+    $this->exec($sqlInsert);
+
   }
 
   public function update() {

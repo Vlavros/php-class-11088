@@ -26,6 +26,10 @@ class Dataset extends Database{
     parent::select($this->sTable,$this->asFields,$asFilter);
   }
 
+  public function insert(array $asData) {
+    $this->insert_($this->sTable,$asData);
+  }
+
 }
 
  ?>

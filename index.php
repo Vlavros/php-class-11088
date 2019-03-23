@@ -99,7 +99,7 @@ $asCRUD=
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-		<?php require_once("./templates/headers.php"); ?>
+		<?php require_once("./templates/headers.js.php"); ?>
     <script>
     $(function() {
       //alert("Teste");

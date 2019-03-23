@@ -46,9 +46,14 @@ $asEmployees =
 $asUsers =
 [
   [
-     "href" => "#",
+     "href" => "users/select.php",
      "target" => "ifrNav",
      "caption" => "Consultar"
+  ],
+  [
+     "href" => "users/insert.php",
+     "target" => "ifrNav",
+     "caption" => "Cadastrar"
   ]
 ];
 
@@ -91,6 +96,7 @@ $asUsers =
             <?=buildDropdownMenu( "NavItem01", "Produtos", $asProducts)?>
             <?=buildDropdownMenu( "NavItem02", "Clientes", $asCustomers)?>
             <?=buildDropdownMenu( "NavItem03", "Fornecedores", $asSuppliers)?>
+            <?=buildDropdownMenu( "NavItem04", "Usuários", $asUsers)?>
 
         </ul>
     </nav>

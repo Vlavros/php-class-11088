@@ -288,7 +288,12 @@ http://php.net/manual/pt_BR/function.mysql-real-escape-string.php
 https://stackoverflow.com/questions/46492621/how-to-resolve-this-deprecated-function-each-php
 
 
+---------------------------------------------------------
+Aula 16 - 21/03/2019 - Sexta
 
+https://www.techonthenet.com/mysql/functions/password.php
+
+parent:: -> operador de escope
 
 
 
